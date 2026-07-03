@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>강동자바라 렉산 견적계산기</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+<section class="hero">
+<div class="heroText">
+<div class="eyebrow">KANGDONG JABARA QUOTE CENTER</div>
+<h1>폴리카보네이트 렉산<br><span>재단 견적계산기</span></h1>
+<p>2T·3T 렉산 판재를 원하는 mm 사이즈로 입력해 예상금액을 확인하세요.</p>
+<div class="topActions">
+<a href="#calculator">3초 예상 견적 계산하기</a>
+<a href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank" class="talk">네이버 톡톡 문의</a>
+</div>
+</div>
+<div class="heroImg"><img src="images/lexan.jpg" alt="렉산 판재 이미지"></div>
+</section>
+
+<section class="calcWrap" id="calculator">
+<div class="panel inputPanel">
+<h2>렉산 재단 정보</h2>
+
+<label for="thickness">두께 선택</label>
+<select id="thickness"></select>
+
+<label for="color">색상 선택</label>
+<select id="color"></select>
+
+<div class="grid2">
+<div><label for="width">가로(mm)</label><input id="width" type="number" value="950" min="100" step="1"></div>
+<div><label for="height">세로(mm)</label><input id="height" type="number" value="1700" min="100" step="1"></div>
+</div>
+
+<label for="qty">수량</label>
+<select id="qty"></select>
+
+<div class="guide"><b>계산 기준</b><span>가로(mm) × 세로(mm) ÷ 90,000 × 두께단가 × 색상계수 × 수량</span></div>
+<div class="shippingGuide"><b>배송 안내</b><span>배송비는 착불입니다. 제품 크기와 지역에 따라 배송비가 달라질 수 있습니다.</span></div>
+</div>
+
+<div class="panel resultPanel">
+<div class="resultBox"><span>최종 예상금액</span><strong id="total">0원</strong><p id="detail">950 × 1700mm / 1개</p></div>
+<div class="breakdown">
+<div><span>면적</span><b id="areaText">0㎡</b></div>
+<div><span>선택 단가</span><b id="unitRate">0</b></div>
+<div><span>장당 금액</span><b id="unitPrice">0원</b></div>
+<div><span>수량</span><b id="qtyText">1개</b></div>
+<div><span>제품 합계</span><b id="itemsTotal">0원</b></div>
+<div><span>배송비</span><b>착불</b></div>
+</div>
+<div class="buttons">
+<button id="copyBtn" type="button">견적내용 복사</button>
+<a href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank" class="talkBtn">네이버 톡톡 문의</a>
+<a href="tel:01075950484">전화문의 010-7595-0484</a>
+<a href="https://kdjavara.kr/product/%ED%8F%B4%EB%A6%AC%EC%B9%B4%EB%B3%B4%EB%84%A4%EC%9D%B4%ED%8A%B8-%EB%A0%89%EC%82%B0-%ED%8C%90-%EC%9E%AC%EB%8B%A8-%EC%B9%BC%EB%9D%BC-%ED%88%AC%EB%AA%85-%EA%B7%9C%EA%B2%A9-%EB%A7%9E%EC%B6%A4-%EC%82%AC%EC%9D%B4%EC%A6%88-%ED%8C%90%EB%A7%A4/696/category/1/display/2/?icid=MAIN.product_listmain_1" target="_blank" class="orderBtn">예상 견적대로 주문하기</a>
+</div>
+<p class="notice">※ 본 계산기는 예상 견적용입니다. 배송비는 착불이며, 최종 금액은 재단 조건과 주문 옵션에 따라 달라질 수 있습니다.</p>
+</div>
+</section>
+<footer><b>강동자바라</b><span>렉산·스테인리스 구조물 맞춤 제작</span></footer>
+</main>
+<script src="prices.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
